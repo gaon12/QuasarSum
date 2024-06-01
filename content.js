@@ -83,6 +83,9 @@ window.addEventListener('load', function() {
       if (data.message === 'Text must have more than 5 sentences.') {
         document.body.removeChild(popupOverlay);
         popupOverlay = createPopup(pageTitle, '원문이 너무 짧아 요약하지 않았습니다.');
+      } else if (data.message === 'No text provided') {
+        document.body.removeChild(popupOverlay);
+        popupOverlay = createPopup(pageTitle, '원문 텍스트가 없습니다. 이미지나 영상으로 된 원문인 것 같습니다.');
       } else {
         const summary1 = data.data.result;
         const summary2 = data.data.result2;
