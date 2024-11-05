@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
   if (window.location.hostname === 'quasarzone.com') {
     pageTitleSelector = 'h1.title.pr-0';
     contentSelector = '#new_contents, .__se_tbl td';
-    utilDivSelector = '#content > div.sub-content-wrap > div.view-content-wrap > div.view-content-area > div.view-title-wrap > div.util';
+    utilDivSelector = '#content > div > div.sub-content-wrap > div.view-content-wrap > div.view-content-area > div.view-title-wrap > div.util';
   } else if (window.location.hostname === 'quasarplay.com') {
     pageTitleSelector = '#full_content > div.post > div.title_wrapper > h2';
     contentSelector = '#new_contents, .__se_tbl td';
